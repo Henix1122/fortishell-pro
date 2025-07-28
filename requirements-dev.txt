@@ -1,0 +1,60 @@
+# Development and Packaging Dependencies for FortiShell Pro
+setuptools>=68.0.0
+wheel>=0.42.0
+
+# Testing
+pytest>=8.2.0
+pytest-cov>=4.1.0
+
+# Code Quality
+black>=24.4.0
+flake8>=7.0.0
+mypy>=1.10.0
+isort>=5.13.2
+
+# Logging and Rich Output
+rich>=13.7.1
+loguru>=0.7.2
+
+# Networking & Security
+requests>=2.32.2
+urllib3>=2.2.1
+cryptography>=42.0.5
+dnspython>=2.6.1
+python-whois>=0.7.3
+validators>=0.22.0
+
+# File & System Utilities
+watchdog>=4.0.0
+psutil>=5.9.8
+Pillow>=10.3.0
+
+# Password Strength
+zxcvbn>=4.4.28
+
+# Data Validation
+jsonschema>=4.22.0
+
+# GUI (Linux)
+PyGObject>=3.46.0
+
+# Optional: Pre-commit hooks for consistent code style
+pre-commit>=3.7.0
+
+# ---
+# Professional Development Setup
+# 1. See README.md for full instructions and usage examples.
+# 2. Install all dev dependencies:
+#    pip install -r requirements-dev.txt
+# 3. Run tests:
+#    pytest --cov=fortishell_pro
+# 4. Format code:
+#    black . && isort .
+# 5. Lint code:
+#    flake8 .
+# 6. Type check:
+#    mypy .
+# 7. Run pre-commit checks:
+#    pre-commit run --all-files
+# 8. Build executable (see README.md for packaging details).
+# ---

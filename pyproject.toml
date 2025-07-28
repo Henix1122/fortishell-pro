@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "fortishell-pro"
+version = "1.0.0"
+description = "Advanced modular cybersecurity toolkit (CLI + GUI)"
+authors = ["FortiShell Pro Team <team@fortishell.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/fortifind/fortishell-pro"
+repository = "https://github.com/fortifind/fortishell-pro"
+documentation = "https://fortishell-pro.readthedocs.io"
+keywords = ["cybersecurity", "cli", "gui", "toolkit", "modular"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "Topic :: Security",
+    "Topic :: Software Development :: Libraries :: Application Frameworks"
+]
+
+[tool.poetry.dependencies]
+python = ">=3.7"
+setuptools = "*"
+click = "^8.1.3"
+rich = "^13.7.0"
+PyQt5 = { version = "^5.15.9", optional = true }
+
+[tool.poetry.extras]
+gui = ["PyQt5"]
+
+[tool.poetry.scripts]
+fortishell = "fortishell_pro.cli:main"
+
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"

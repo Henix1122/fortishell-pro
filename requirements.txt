@@ -1,0 +1,41 @@
+# --- Core Dependencies ---
+rich==13.7.1
+requests==2.31.0
+urllib3==2.2.1
+Pillow==10.3.0
+cryptography==42.0.5
+dnspython==2.6.1
+python-whois==0.7.3
+validators==0.22.0
+watchdog==4.0.0
+psutil==5.9.8
+zxcvbn==4.4.28
+loguru==0.7.2
+jsonschema==4.21.1
+PyGObject==3.46.0
+
+# --- Dev & Testing Tools (optional) ---
+pytest==8.2.0
+coverage==7.5.1
+autopep8==2.1.0
+
+# --- Optional: Packaging ---
+# pyinstaller==6.6.0
+# cx_Freeze==7.0.0
+
+# --- OS-Specific Notes ---
+# Windows: Tkinter preinstalled, pywin32 works out of box
+# macOS/Linux: May need 'sudo apt install python3-tk' or brew-based Tkinter install
+
+# --- Virtual Environment Setup ---
+# python3 -m venv .venv
+# source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+# pip install -r requirements.txt
+
+# --- Advanced Usage ---
+# To install only core: pip install -r requirements.txt
+# To install with dev tools: pip install -r requirements.txt --extra-index-url https://pypi.org/simple
+
+# --- Security & Quality ---
+# Consider using pip-tools or poetry for dependency management.
+# Run 'pip check' after install to verify package integrity.
